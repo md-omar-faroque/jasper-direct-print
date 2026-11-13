@@ -1,0 +1,13 @@
+# Local third-party executable (download separately from the official source)
+native-host/tools/SumatraPDF.exe
+
+# Local report/output files
+*.pdf
+*.log
+*.tmp
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
