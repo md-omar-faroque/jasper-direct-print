@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Report Direct Print",
+  "version": "3.0.0",
+  "description": "Automatically prints report PDFs to your chosen printer without manual steps.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "nativeMessaging",
+    "cookies",
+    "notifications"
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArJicdV43dxks1GfHQnJDzW0V3jNSVcUFWzu56cRyfHbP40JZCCp/WBkTQBuZXa3xpfV6U/0YT4TU+RE1DtR3xJU0wJipK9KtWn/pEwCNoNob9vnYRCkQfMKZrJUI8IjJdM4zCiii3r7HMVtrm1fNSwx4VFDVBKvcdbcMGCRHVcoXrWbA5qGZutbt3aD2mglAzPyxHzhtTx+h7vV9pEHXaxNNGZME/veSTTye01SLeWyPNobCqcMh6fLTKJXfuo+EiiUZyqxvj4opJBMdh+YFpAvmEC1t79YkYcDdxddoPn45Fj6mNlp+0XinfgtcXOf6MqRj+2DsvznV44QXQ9GlRQIDAQAB",
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Report Direct Print"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/printer.png",
+    "48": "icons/printer.png",
+    "128": "icons/printer.png"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Report Direct Print</title>
+  <style>
+    body {
+      width: 280px;
+      margin: 0;
+      padding: 16px;
+      font-family: Segoe UI, Arial, sans-serif;
+      color: #1f2937;
+    }
+
+    h1 {
+      font-size: 1rem;
+      margin: 0 0 12px;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    button, a {
+      font: inherit;
+    }
+
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 12px;
+      background: #2563eb;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    #status {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Report Direct Print</h1>
+  <div class="row">
+    <span>Automatic printing</span>
+    <input id="enabled" type="checkbox" />
+  </div>
+  <button id="openOptions" type="button">Open settings</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
