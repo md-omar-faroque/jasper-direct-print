@@ -47,7 +47,7 @@ Do not delete or move the folder after setup; the native messaging registration 
 
 ### 2. Install SumatraPDF
 
-Install SumatraPDF normally, or place the portable executable here:
+Check the Install SumatraPDF.exe in the given location. If there is none then Install SumatraPDF normally, or place the portable executable here:
 
 ```text
 native-host\tools\SumatraPDF.exe
