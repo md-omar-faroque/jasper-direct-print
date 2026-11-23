@@ -29,6 +29,7 @@ Chrome extensions cannot directly send jobs to arbitrary Windows USB/network pri
 - Google Chrome (or Microsoft Edge)
 - Windows PowerShell 5.1
 - A Windows-installed USB or network printer
+- If there is any anti-virus that can blocks the direct print. Check that which option is blocking then disable it to use direct print.
 - [SumatraPDF](https://www.sumatrapdfreader.org/download-free-pdf-viewer) installed, or its portable `SumatraPDF.exe` copied to `native-host/tools/`
 
 SumatraPDF is not bundled in this repository. Download it from its official website and review its license and distribution terms.
