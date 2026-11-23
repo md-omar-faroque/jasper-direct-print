@@ -154,6 +154,7 @@ The helper uses the browser session cookies when retrieving the PDF. Make sure y
 
 - The extension requests broad HTTP/HTTPS host access in its manifest so it can detect report tabs on different Jasper servers. Restrict `host_permissions` to your own server(s) where practical before deploying.
 - The extension handles report URLs and session cookies to retrieve authenticated PDFs. Treat this data as sensitive.
+- The settings-page password is configured separately on each installation and stored as a salted hash in local browser storage. It is only a casual-access deterrent, not a security boundary; anyone with access to the browser profile or extension developer tools can bypass it.
 - The native host is registered for the extension ID embedded in the manifest key. Do not change or remove that key unless you also update the setup process and native host registration.
 - PDFs are handled locally by the Windows helper. Review the PowerShell scripts before installing them in a managed or production environment.
 - Do not commit report PDFs, credentials, cookies, private server addresses, or customer data to this repository.
